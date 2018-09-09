@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('user/app')
 
-  <head>
-      @include('user.layouts.head')
-  </head>
+@section('bg-img', asset('user/img/home-bg.jpg'))
+@section('title', 'Taner Blog');
+@section('sub-title', 'A Blog Theme by Start Bootstrap');
 
-  <body>
+@section('main-content')
 
- @include('user.layouts.header')
-
-    <!-- Main Content -->
+ <!-- Main Content -->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-preview">
-            <a href="post.html">
+            <a href="{{route('post')}}">
               <h2 class="post-title">
                 Man must explore, and this is exploration at its greatest
               </h2>
@@ -76,8 +73,4 @@
 
     <hr>
 
-    @include('user/layouts/footer')
-
-  </body>
-
-</html>
+@endsection		
