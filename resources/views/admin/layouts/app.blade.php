@@ -10,7 +10,7 @@
 		@include('admin.layouts.header')
 		@include('admin.layouts.sidebar')
 
-		@section('main-contenct')
+		@section('main-content')
 			@show
 
 		@include('admin.layouts.footer')
