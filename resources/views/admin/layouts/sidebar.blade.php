@@ -26,10 +26,10 @@
       <ul class="sidebar-menu">
         <li class="header">Block</li>
         <li class="active treeview">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i>Posts</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i>Categories</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i>Tags</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i>Users</a></li>
+            <li class="active"><a href="{{route('post.index')}}"><i class="fa fa-circle-o"></i>Posts</a></li>
+            <li><a href="{{route('category.index')}}"><i class="fa fa-circle-o"></i>Categories</a></li>
+            <li><a href="{{route('tag.index')}}"><i class="fa fa-circle-o"></i>Tags</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Users</a></li>
         </li>
       </ul>
     </section>
