@@ -76,6 +76,7 @@
                 </div>
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-warning" href="{{route('post.index')}}">Back</a>
               </div>
             </form>
           </div>

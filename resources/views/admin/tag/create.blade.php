@@ -45,7 +45,8 @@
                     <input type="text" class="form-control" id="slug" name="slug" placeholder="Enter slug">
                   </div>                  
 	              <div class="form-group">
-	                <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+	                <a class="btn btn-warning" href="{{route('tag.index')}}">Back</a>
 	              </div>
                 </div>
               </div>
