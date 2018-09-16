@@ -25,27 +25,29 @@
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Quick Example</h3>
+              <h3 class="box-title">Title</h3>
             </div>
+
+            @include('includes.messages')
+
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" action="{{ route('tag.store') }}" method="POST">
+              {{ csrf_field() }}
               <div class="box-body">
                 <div class="col-lg-offset-3 col-lg-6">
                   <div class="form-group">
-                    <label for="post_title">Category title</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Category Title">
+                    <label for="post_title">Tag title</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Tag Title">
                   </div>
                   <div class="form-group">
-                    <label for="slug">Category Slug</label>
+                    <label for="slug">Tag Slug</label>
                     <input type="text" class="form-control" id="slug" name="slug" placeholder="Enter slug">
                   </div>                  
 	              <div class="form-group">
 	                <button type="submit" class="btn btn-primary">Submit</button>
 	              </div>
                 </div>
-
-
               </div>
             </form>
           </div>

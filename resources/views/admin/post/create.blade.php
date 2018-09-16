@@ -24,20 +24,24 @@
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Quick Example</h3>
+              <h3 class="box-title">Title</h3>
             </div>
+
+            @include('includes.messages')
+
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" action="{{ route('post.store') }}" method="post">
+              {{ csrf_field() }}
               <div class="box-body">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label for="post_title">Post title</label>
-                    <input type="text" class="form-control" id="post_tite" name="post_tite" placeholder="Enter post">
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter post">
                   </div>
                   <div class="form-group">
                     <label for="subpost_title">Post Sub title</label>
-                    <input type="text" class="form-control" id="subpost_title" name="subpost_title" placeholder="Enter subpost">
+                    <input type="text" class="form-control" id="subtitle" name="subtitle" placeholder="Enter subpost">
                   </div> 
                   <div class="form-group">
                     <label for="slug">Post Slug</label>
@@ -67,9 +71,7 @@
                   </div>
                   <!-- /.box-header -->
                   <div class="box-body pad">
-                    <form>
                       <textarea class="textarea" name="body" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                    </form>
                   </div>
                 </div>
               <div class="box-footer">
